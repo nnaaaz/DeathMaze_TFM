@@ -56,9 +56,8 @@ red-portal   : 17994475f7c.png
 {type = "BonusRemoveGround", image = "17d0b990904.png", x = 254, y = 1948, remove_ground_id = {15, 16}}
 {type = "BonusShrink", image = "17db916fa38.png", x = 6700, y = 1910}
 {type = "BonusGrow", image = "17db94a54b7.png", x = 945, y = 725}
---portal--
-x = 5605, y = 1341
-x = 2141, y = 192
+{type = "Teleporter", image = "17994471411.png", x = 5605, y = 1340, dst = {x = 2136, y = 195}}
+
 
 
  
@@ -73,9 +72,7 @@ x = 2141, y = 192
 {type = "BonusRemoveGround", image = "17d0b990904.png", x = 1036, y = 728 , remove_ground_id = {15, 16}}
 {type = "BonusShrink", image = "17db916fa38.png", x = 502, y = 239}
 {type = "BonusGrow", image = "17db94a54b7.png", x = 1905, y = 950}
---portal--
-x = 1081, y = 153
-x = 1032, y = 632
+{type = "Teleporter", image = "17994471411.png", x = 5605, y = 1340, dst = {x = 1033, y = 631}}
 
 
 
