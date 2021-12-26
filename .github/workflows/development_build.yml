@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - name: "Pull Submodules"
+      run: git submodule update --recursive --remote
     - name: "Combine"
       run: make re
     - uses: "marvinpinto/action-automatic-releases@latest"
