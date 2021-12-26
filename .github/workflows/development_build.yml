@@ -1,0 +1,27 @@
+name: "Development Build"
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  development-build:
+    name: "Development Build"
+    runs-on: "ubuntu-latest"
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: "Pull Submodules"
+      run: git submodule update --init --recursive
+    - name: "Combine"
+      run: make re
+    - uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        automatic_release_tag: "latest"
+        prerelease: true
+        title: "Development Build"
+        files: |
+          *.tfm.lua
