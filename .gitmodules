@@ -1,0 +1,3 @@
+[submodule "pshy_merge"]
+	path = pshy_merge
+	url = git@github.com:Pshy0/pshy_merge.git
