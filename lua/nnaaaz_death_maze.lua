@@ -26,6 +26,11 @@ tfm.exec.disablePhysicalConsumables(true)
 
 
 
+--- Pshy Settings:
+pshy.authors["Nnaaaz#0000"] = true
+
+
+
 --- Rotation and maps:
 pshy.mapdb_rotations["death_maze"] = {items = {}, autoskip = false, shamans = 0}
 local death_maze_maps = pshy.mapdb_rotations["death_maze"].items
