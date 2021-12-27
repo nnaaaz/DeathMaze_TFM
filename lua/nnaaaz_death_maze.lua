@@ -10,7 +10,6 @@
 -- @require pshy_merge.lua
 -- @require pshy_basic_bonuses.lua
 -- @require pshy_bonuses.lua
--- @require pshy_essentials.lua
 -- @require pshy_mapdb.lua
 -- @require pshy_misc_bonuses.lua
 -- @require pshy_newgame.lua
@@ -22,6 +21,7 @@
 tfm.exec.disableAfkDeath(true)
 tfm.exec.disableAutoNewGame(true)
 tfm.exec.disableAutoShaman(true)
+tfm.exec.disableAutoTimeLeft(true)
 tfm.exec.disablePhysicalConsumables(true)
 
 
@@ -151,6 +151,12 @@ end
 
 function eventPlayerDied(player_name)
 	tfm.exec.changePlayerSize(player_name, 1)
+	tfm.exec.respawnPlayer(player_name)
+end
+
+
+
+function eventNewPlayer(player_name)
 	tfm.exec.respawnPlayer(player_name)
 end
 
