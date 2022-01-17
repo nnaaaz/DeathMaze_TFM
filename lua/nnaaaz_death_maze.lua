@@ -31,6 +31,11 @@ pshy.authors["Nnaaaz#0000"] = true
 
 
 
+--- Internal Use:
+local map_completed = false
+
+
+
 --- Rotation and maps:
 pshy.mapdb_rotations["death_maze"] = {items = {}, autoskip = false, shamans = 0}
 local death_maze_maps = pshy.mapdb_rotations["death_maze"].items
@@ -144,8 +149,13 @@ table.insert(death_maze_maps, "death_maze_8")
 
 
 function eventPlayerWon(player_name)
-	tfm.exec.setGameTime(60, false)
+	tfm.exec.setGameTime(40, false)
 	tfm.exec.disableAutoNewGame(false) -- expected to be overriden by pshy_newgame.lua
+	tfm.exec.respawnPlayer(player_name)
+	if not map_completed then
+		map_completed = true
+		tfm.exec.chatMessage("<b><r>Congratulations, the death maze have been completed!</r></b>", nil)
+	end
 end
 
 
@@ -159,6 +169,21 @@ end
 
 function eventNewPlayer(player_name)
 	tfm.exec.respawnPlayer(player_name)
+end
+
+
+
+function eventLoop(time_elapsed, time_remaining)
+	if time_remaining < 0 then
+		tfm.exec.newGame("death_maze")
+	end
+end
+
+
+
+function eventNewGame()
+	map_completed = false
+	tfm.exec.setGameTime(60 * 60, true)
 end
 
 
