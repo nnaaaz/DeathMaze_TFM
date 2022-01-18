@@ -81,8 +81,8 @@ pshy.mapdb_maps["death_maze_4"].bonuses = {
 {type = "BonusRemoveGround", image = "17d0b994f57.png", x = 624, y = 1724, remove_ground_id = {11, 12}};
 {type = "BonusRemoveGround", image = "17d0b9966ca.png", x = 278, y = 525, remove_ground_id = {13, 14}};
 {type = "BonusRemoveGround", image = "17d0b997e3d.png", x = 254, y = 1943, remove_ground_id = {15, 16}};
-{type = "BonusShrink", image = "17db916fa38.png", x = 6700, y = 1910, remain = true};
-{type = "BonusGrow", image = "17db94a54b7.png", x = 945, y = 725, remain = true};
+{type = "BonusShrink", image = "17db916fa38.png", x = 6700, y = 1910, value = 0.5 ,remain = true};
+{type = "BonusGrow", image = "17db94a54b7.png", x = 945, y = 725, value = 1.5 ,remain = true};
 {type = "Teleporter", image = "17994471411.png", x = 5605, y = 1340, dst = {x = 2136, y = 195}};
 }
 table.insert(death_maze_maps, "death_maze_4")
@@ -97,8 +97,8 @@ pshy.mapdb_maps["death_maze_5"].bonuses = {
 {type = "BonusRemoveGround", image = "17d0b994f57.png", x = 1395, y = 245, remove_ground_id = {11, 12}};
 {type = "BonusRemoveGround", image = "17d0b9966ca.png", x = 612, y = 1454, remove_ground_id = {13, 14, 17, 18}};
 {type = "BonusRemoveGround", image = "17d0b997e3d.png", x = 1036, y = 723 , remove_ground_id = {15, 16}};
-{type = "BonusShrink", image = "17db916fa38.png", x = 502, y = 239, remain = true};
-{type = "BonusGrow", image = "17db94a54b7.png", x = 1905, y = 950, remain = true};
+{type = "BonusShrink", image = "17db916fa38.png", x = 502, y = 239, value = 0.5 ,remain = true};
+{type = "BonusGrow", image = "17db94a54b7.png", x = 1905, y = 950, value = 1.5 ,remain = true};
 {type = "Teleporter", image = "17994471411.png", x = 1080, y = 155, dst = {x = 1035, y = 625}};
 }
 table.insert(death_maze_maps, "death_maze_5")
@@ -113,8 +113,8 @@ pshy.mapdb_maps["death_maze_6"].bonuses = {
 {type = "BonusRemoveGround", image = "17d0b994f57.png", x = 887, y = 253, remove_ground_id = {11, 12}};
 {type = "BonusRemoveGround", image = "17d0b9966ca.png", x = 1536, y = 676, remove_ground_id = {13, 14}};
 {type = "BonusRemoveGround", image = "17d0b997e3d.png", x = 1777, y = 76 , remove_ground_id = {15, 16}};
-{type = "BonusShrink", image = "17db916fa38.png", x = 1941, y = 506, remain = true};
-{type = "BonusGrow", image = "17db94a54b7.png", x = 2750, y = 335, remain = true};
+{type = "BonusShrink", image = "17db916fa38.png", x = 1941, y = 506, value = 0.5 ,remain = true};
+{type = "BonusGrow", image = "17db94a54b7.png", x = 2750, y = 335, value = 1.5 ,remain = true};
 }
 table.insert(death_maze_maps, "death_maze_6")
 -- map death_maze_7:
@@ -126,8 +126,8 @@ pshy.mapdb_maps["death_maze_7"].bonuses = {
 {type = "BonusRemoveGround", image = "17d0b992075.png", x = 1474, y = 184, remove_ground_id = {7, 8}};
 {type = "BonusRemoveGround", image = "17d0b9937e5.png", x = 714, y = 2052, remove_ground_id = {9, 10}};
 {type = "BonusRemoveGround", image = "17d0b994f57.png", x = 1456, y = 119, remove_ground_id = {11, 12}};
-{type = "BonusShrink", image = "17db916fa38.png", x = 89, y = 1152, remain = true};
-{type = "BonusGrow", image = "17db94a54b7.png", x = 1266, y = 947, remain = true};
+{type = "BonusShrink", image = "17db916fa38.png", x = 89, y = 1152, value = 0.5 ,remain = true};
+{type = "BonusGrow", image = "17db94a54b7.png", x = 1266, y = 947, value = 1.5 ,remain = true};
 }
 table.insert(death_maze_maps, "death_maze_7")
 -- map death_maze_8:
@@ -141,8 +141,8 @@ pshy.mapdb_maps["death_maze_8"].bonuses = {
 {type = "BonusRemoveGround", image = "17d0b994f57.png", x = 1538, y = 778, remove_ground_id = {11, 12}};
 {type = "BonusRemoveGround", image = "17d0b9966ca.png", x = 2114, y = 1420, remove_ground_id = {13, 14}};
 {type = "BonusRemoveGround", image = "17d0b997e3d.png", x = 1987, y = 523 , remove_ground_id = {15, 16}};
-{type = "BonusShrink", image = "17db916fa38.png", x = 569, y = 616, remain = true};
-{type = "BonusGrow", image = "17db94a54b7.png", x = 675, y = 1016, remain = true};
+{type = "BonusShrink", image = "17db916fa38.png", x = 569, y = 616, value = 0.5 ,remain = true};
+{type = "BonusGrow", image = "17db94a54b7.png", x = 675, y = 1016, value = 1.5 ,remain = true};
 }
 table.insert(death_maze_maps, "death_maze_8")
 
