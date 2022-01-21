@@ -1,11 +1,7 @@
---- pshy_luaperftest.lua
+--- nnaaaz_death_maze.lua
 --
--- Test the performances of some lua basic features.
---
--- To do so, functions using the feature 100 times are called.
--- The time taken is measured.
---
--- @author TFM:Pshy#3752 DC:Pshy#7998
+-- @author TFM:Pshy#3752 DC:Pshy#7998 (script)
+-- @author TFM:Nnaaaz#0000 (maps)
 --
 -- @require pshy_merge.lua
 -- @require pshy_basic_bonuses.lua
@@ -27,6 +23,7 @@ tfm.exec.disablePhysicalConsumables(true)
 
 
 --- Pshy Settings:
+pshy.authors["Pshy#3752"] = true
 pshy.authors["Nnaaaz#0000"] = true
 
 
