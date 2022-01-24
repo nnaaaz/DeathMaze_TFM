@@ -23,6 +23,9 @@ tfm.exec.disablePhysicalConsumables(true)
 
 
 --- Pshy Settings:
+pshy.merge_days_before_update_request_1	= 14		-- How many days old the script should be before suggesting an update.
+pshy.merge_days_before_update_request_2	= 30		-- How many days old the script should be before requesting an update.
+pshy.merge_days_before_update_request_3	= 99999		-- How many days old the script should be before refusing to start.
 pshy.authors["Pshy#3752"] = true
 pshy.authors["Nnaaaz#0000"] = true
 
