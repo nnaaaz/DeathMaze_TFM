@@ -147,7 +147,6 @@ table.insert(death_maze_maps, "death_maze_8")
 
 function eventPlayerWon(player_name)
 	tfm.exec.setGameTime(40, false)
-	tfm.exec.disableAutoNewGame(false) -- expected to be overriden by pshy_newgame.lua
 	tfm.exec.respawnPlayer(player_name)
 	if not map_completed then
 		map_completed = true
