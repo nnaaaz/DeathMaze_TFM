@@ -6,10 +6,12 @@
 -- @require pshy_merge.lua
 -- @require pshy_basic_bonuses.lua
 -- @require pshy_bonuses.lua
+-- @require pshy_imagedb_deathmaze.lua
 -- @require pshy_mapdb.lua
 -- @require pshy_misc_bonuses.lua
 -- @require pshy_newgame.lua
 -- @require pshy_perms.lua
+-- @require pshy_utils_tfm.lua
 
 
 
