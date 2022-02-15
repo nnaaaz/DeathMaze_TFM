@@ -9,7 +9,7 @@ $(NAME_DEATH_MAZE_MIN):
 	$(CC) --nocomments pshy_merge.lua -- nnaaaz_death_maze.lua >> $@
 
 $(NAME_DEATH_MAZE_EXT):
-	$(CC) --minimize pshy_merge.lua -- pshy_essentials.lua -- nnaaaz_death_maze.lua >> $@
+	$(CC) --minimize pshy_merge.lua -- pshy_fcplatform.lua -- pshy_essentials.lua -- nnaaaz_death_maze.lua >> $@
 
 .PHONY: clean
 clean:
