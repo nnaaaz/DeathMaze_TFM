@@ -4,6 +4,7 @@
 -- @author TFM:Nnaaaz#0000 (maps)
 --
 -- @require pshy_merge.lua
+-- @require pshy_antiguest.lua
 -- @require pshy_basic_bonuses.lua
 -- @require pshy_bonuses.lua
 -- @require pshy_imagedb_deathmaze.lua
@@ -12,7 +13,6 @@
 -- @require pshy_newgame.lua
 -- @require pshy_perms.lua
 -- @require pshy_utils_tfm.lua
-
 
 
 --- TFM Settings:
