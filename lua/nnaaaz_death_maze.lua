@@ -5,14 +5,15 @@
 --
 -- @require pshy_merge.lua
 -- @require pshy_antiguest.lua
--- @require pshy_basic_bonuses.lua
 -- @require pshy_bonuses.lua
+-- @require pshy_bonuses_basic.lua
+-- @require pshy_bonuses_misc.lua
 -- @require pshy_imagedb_deathmaze.lua
 -- @require pshy_mapdb.lua
--- @require pshy_misc_bonuses.lua
 -- @require pshy_newgame.lua
 -- @require pshy_perms.lua
 -- @require pshy_utils_tfm.lua
+
 
 
 --- TFM Settings:
@@ -26,10 +27,8 @@ tfm.exec.disableDebugCommand(true)
 tfm.exec.disableAutoScore(true)
 
 
+
 --- Pshy Settings:
-pshy.merge_days_before_update_request_1	= 14		-- How many days old the script should be before suggesting an update.
-pshy.merge_days_before_update_request_2	= 30		-- How many days old the script should be before requesting an update.
-pshy.merge_days_before_update_request_3	= 99999		-- How many days old the script should be before refusing to start.
 pshy.authors["Pshy#3752"] = true
 pshy.authors["Nnaaaz#0000"] = true
 
