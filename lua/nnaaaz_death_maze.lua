@@ -10,6 +10,7 @@
 -- @require pshy_bonuses_misc.lua
 -- @require pshy_imagedb_deathmaze.lua
 -- @require pshy_mapdb.lua
+-- @require pshy_merge.lua
 -- @require pshy_newgame.lua
 -- @require pshy_perms.lua
 -- @require pshy_utils_tfm.lua
@@ -29,8 +30,8 @@ tfm.exec.disableAutoScore(true)
 
 
 --- Pshy Settings:
-pshy.authors["Pshy#3752"] = true
-pshy.authors["Nnaaaz#0000"] = true
+pshy.authors[70224600] = "Nnaaaz#0000"
+pshy.authors[105766424] = "Pshy#3752"
 
 
 
