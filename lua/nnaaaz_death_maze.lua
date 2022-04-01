@@ -8,6 +8,7 @@
 -- @require pshy_bonuses.lua
 -- @require pshy_bonuses_basic.lua
 -- @require pshy_bonuses_misc.lua
+-- @require pshy_commands_fun.lua 
 -- @require pshy_imagedb_deathmaze.lua
 -- @require pshy_mapdb.lua
 -- @require pshy_merge.lua
