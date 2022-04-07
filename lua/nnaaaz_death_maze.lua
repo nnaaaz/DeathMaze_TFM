@@ -27,6 +27,7 @@ tfm.exec.disablePhysicalConsumables(true)
 tfm.exec.disableMinimalistMode(true)
 tfm.exec.disableDebugCommand(true)
 tfm.exec.disableAutoScore(true)
+tfm.exec.disableChatCommandsDisplay(nil, true)
 
 
 
