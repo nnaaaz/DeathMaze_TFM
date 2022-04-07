@@ -15,6 +15,7 @@
 -- @require pshy_newgame.lua
 -- @require pshy_perms.lua
 -- @require pshy_utils_tfm.lua
+-- @require pshy_version.lua
 
 
 
