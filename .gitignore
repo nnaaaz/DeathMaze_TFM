@@ -1,1 +1,11 @@
-*.tfm.lua
+# Thirdparty modules
+lua/other/*
+examples/
+*.old.lua
+*.old.py
+# Test and temporary
+lua/test/*
+luatest
+tfm.lua/
+tmp/
+*.tfm.lua.txt
