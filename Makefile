@@ -1,7 +1,7 @@
-NAME_DEATH_MAZE_MIN		= death_maze_min.tfm.lua
-NAME_DEATH_MAZE_EXT		= death_maze_ext.tfm.lua
+NAME_DEATH_MAZE_MIN		= death_maze_min.tfm.lua.txt
+NAME_DEATH_MAZE_EXT		= death_maze_ext.tfm.lua.txt
 ALL_NAMES				= $(NAME_DEATH_MAZE_MIN) $(NAME_DEATH_MAZE_EXT)
-NAME_DEATH_MAZE_AC		= death_maze_ac.tfm.lua
+NAME_DEATH_MAZE_AC		= nnaaaz_deathmaze_with_anticheat.tfm.lua.txt
 ALLALL_NAMES			= $(ALL_NAMES) $(NAME_DEATH_MAZE_AC)
 CC						= ./pshy_merge/combine.py
 
@@ -23,7 +23,7 @@ clean:
 
 .PHONY: fclean
 fclean: clean
-	rm -f *.tfm.lua
+	rm -f *.tfm.lua.txt
 
 .PHONY: re
 re: fclean all
