@@ -264,6 +264,6 @@ end
 
 
 function eventInit()
-	pshy.newgame_ChatCommandRotc(user, "death_maze") -- TODO: have a function for setting the rotation in `pshy_newgame.lua`!
+	pshy.newgame_SetRotation("death_maze")
 	tfm.exec.newGame("death_maze")
 end
