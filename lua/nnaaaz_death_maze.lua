@@ -8,7 +8,6 @@
 -- @require pshy_antiguest.lua
 -- @require pshy_bonuses.lua
 -- @require pshy_bonuses_basic.lua
--- @require pshy_bonuses_mapext.lua
 -- @require pshy_bonuses_misc.lua
 -- @require pshy_commands_fun.lua 
 -- @require pshy_commands_modules.lua 
@@ -38,6 +37,7 @@ system.disableChatCommandDisplay(nil, true)
 --- Pshy Settings:
 pshy.authors[70224600] = "Nnaaaz#0000"
 pshy.authors[105766424] = "Pshy#3752"
+pshy.mapinfo_max_grounds = 30
 
 
 
@@ -481,7 +481,7 @@ pshy.mapdb_maps["10"].bonuses = {
 {type_name = "BonusDeath", x = 1493, y = 1790};
 {type_name = "BonusDeath", x = 1493, y = 1961};
 }
---table.insert(death_maze_maps, "10")
+table.insert(death_maze_maps, "10")
 
 
 
