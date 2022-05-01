@@ -16,7 +16,7 @@ $(NAME_DEATH_MAZE_EXT):
 	$(CC) --minimize pshy_fcplatform.lua -- pshy_ban.lua -- pshy_essentials.lua -- nnaaaz_death_maze.lua >> $@
 
 $(NAME_DEATH_MAZE_AC):
-	$(CC) --minimize pshy_deathmaze_anticheat_ext.lua nnaaaz_death_maze.lua >> $@
+	$(CC) --minimize nnaaaz_deathmaze_with_anticheat.lua >> $@
 	
 .PHONY: clean
 clean:
