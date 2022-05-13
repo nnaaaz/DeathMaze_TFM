@@ -36,7 +36,7 @@ system.disableChatCommandDisplay(nil, true)
 
 
 --- Pshy Settings:
-pshy.splashscreen_image = "17ab692dc8e.png"	-- splash image
+pshy.splashscreen_image = "180bb2c9eea.png"	-- splash image
 pshy.splashscreen_x = 100					-- x location
 pshy.splashscreen_y = -10					-- y location
 pshy.splashscreen_sx = 1					-- scale on x
