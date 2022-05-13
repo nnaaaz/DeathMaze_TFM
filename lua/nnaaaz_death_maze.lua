@@ -18,6 +18,7 @@
 -- @require pshy_perms.lua
 -- @require pshy_utils_tfm.lua
 -- @require pshy_version.lua
+-- @require pshy_splashscreen.lua
 
 
 
@@ -35,6 +36,12 @@ system.disableChatCommandDisplay(nil, true)
 
 
 --- Pshy Settings:
+pshy.splashscreen_image = "17ab692dc8e.png"	-- splash image
+pshy.splashscreen_x = 100					-- x location
+pshy.splashscreen_y = -10					-- y location
+pshy.splashscreen_sx = 1					-- scale on x
+pshy.splashscreen_sy = 1					-- scale on y
+pshy.splashscreen_text = nil
 pshy.authors[70224600] = "Nnaaaz#0000"
 pshy.authors[105766424] = "Pshy#3752"
 pshy.mapinfo_max_grounds = 30
