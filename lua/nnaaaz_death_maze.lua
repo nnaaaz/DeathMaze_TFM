@@ -547,6 +547,11 @@ end
 function eventNewGame()
 	map_completed = false
 	tfm.exec.setGameTime(60 * 60, true)
+	ui.removeTextArea(arbitrary_close_help_btn_id, user)
+	for player_name, image_id in pairs(modulehelp_images) do
+		tfm.exec.removeImage(image_id)
+	end
+	modulehelp_images = {}
 	for player_name, player in pairs(tfm.get.room.playerList) do
 		TouchPlayerUi(player_name)
 	end
@@ -569,10 +574,10 @@ local function ChatCommandModulehelp(user)
 	if modulehelp_images[user] then
 		tfm.exec.removeImage(modulehelp_images[user])
 		modulehelp_images[user] = nil
-		ui.removeTextArea(arbitrary_close_help_btn_id)
+		ui.removeTextArea(arbitrary_close_help_btn_id, user)
 	else
-		modulehelp_images[user] = tfm.exec.addImage("180a9f1cf9c.png", ":0", 200, 50, player_name)
-		ui.addTextArea(arbitrary_close_help_btn_id, "<p align='center'><font size='128'><a href='event:pcmd modulehelp'>        </a></font></p>", player_name, 560, 70, 30, 30, 0xff0000, 0xff0000, 0.02, true)		
+		modulehelp_images[user] = tfm.exec.addImage("180a9f1cf9c.png", ":0", 200, 50, user)
+		ui.addTextArea(arbitrary_close_help_btn_id, "<p align='center'><font size='128'><a href='event:pcmd modulehelp'>        </a></font></p>", user, 560, 70, 30, 30, 0xff0000, 0xff0000, 0.02, true)		
 	end
 end
 pshy.commands["modulehelp"] = {func = ChatCommandModulehelp, desc = "Show the module help.", argc_min = 0, argc_max = 0}
