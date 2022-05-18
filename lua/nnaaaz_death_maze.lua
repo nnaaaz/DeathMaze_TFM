@@ -497,16 +497,9 @@ table.insert(death_maze_maps, "10")
 
 
 
-local function TouchPlayerUi(player_name)
-	print_debug("updated image")
+local function TouchPlayer(player_name)
 	tfm.exec.addImage("180a9f28729.png", ":0", 10, 30, player_name)
 	ui.addTextArea(arbitrary_help_btn_id, "<p align='center'><font size='128'><a href='event:pcmd modulehelp'>        </a></font></p>", player_name, 10, 30, 50, 50, 0xff0000, 0xff0000, 0.02, true)
-end
-
-
-
-local function TouchPlayer(player_name)
-	TouchPlayerUi(player_name)
 end
 
 
@@ -547,14 +540,6 @@ end
 function eventNewGame()
 	map_completed = false
 	tfm.exec.setGameTime(60 * 60, true)
-	ui.removeTextArea(arbitrary_close_help_btn_id, user)
-	for player_name, image_id in pairs(modulehelp_images) do
-		tfm.exec.removeImage(image_id)
-	end
-	modulehelp_images = {}
-	for player_name, player in pairs(tfm.get.room.playerList) do
-		TouchPlayerUi(player_name)
-	end
 end
 
 
