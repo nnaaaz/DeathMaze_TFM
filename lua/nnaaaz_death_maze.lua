@@ -498,8 +498,8 @@ table.insert(death_maze_maps, "10")
 
 
 local function TouchPlayer(player_name)
-	tfm.exec.addImage("180a9f233d2.png", ":0", 10, 30, player_name)
-	ui.addTextArea(arbitrary_help_btn_id, "<p align='center'><font size='128'><a href='event:pcmd modulehelp'>        </a></font></p>", player_name, 10, 30, 50, 50, 0xff0000, 0xff0000, 0.02, true)
+	tfm.exec.addImage("1810297bd81.png", ":0", 10, 30, player_name)
+	ui.addTextArea(arbitrary_help_btn_id, "<p align='center'><font size='128'><a href='event:pcmd modulehelp'>        </a></font></p>", player_name, 10, 30, 38, 38, 0xff0000, 0xff0000, 0.02, true)
 end
 
 
