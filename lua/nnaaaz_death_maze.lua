@@ -518,7 +518,7 @@ local function TouchPlayer(player_name)
 	tfm.exec.addImage("1810297bd81.png", ":0", 10, 30, player_name)
 	ui.addTextArea(arbitrary_help_btn_id, "<p align='center'><font size='128'><a href='event:pcmd modulehelp'>        </a></font></p>", player_name, 10, 30, 38, 38, 0xff0000, 0xff0000, 0.02, true)
 	tfm.exec.chatMessage("• <fc><b>For any suggestions or other games, check this topic:</b></fc>", player_name)
-	tfm.exec.chatMessage("<a:active><b>https://atelier801.com/topic?f=6&t=896069</b></a:active>", player_name)
+	tfm.exec.chatMessage("<j><b>ht&#116;ps:&#47;/atelier801.com/topic?f=6&t=896069</b></j>", player_name)
 end
 
 
