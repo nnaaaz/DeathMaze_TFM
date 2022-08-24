@@ -1,11 +1,17 @@
-# Thirdparty modules
-lua/other/*
-examples/
-*.old.lua
-*.old.py
-# Test and temporary
-lua/test/*
-luatest
+# Compiled scripts:
 tfm.lua/
-tmp/
+pshy_merge/examples/
+pshy_merge/tfm.lua/
+*.tfm.lua
 *.tfm.lua.txt
+
+# Temporary files:
+tmp/
+pshy_merge/tmp/
+*.tmp
+*.tmp.lua
+test_results/
+deps/
+
+# Thirdparty scripts:
+pshy_merge/lua/other/
