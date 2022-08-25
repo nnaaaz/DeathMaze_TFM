@@ -1,4 +1,4 @@
-name: "Development Build"
+name: "Continuous Build"
 
 on:
   push:
@@ -7,12 +7,16 @@ on:
     branches: [ main ]
 
 jobs:
-  development-build:
-    name: "Development Build"
+  continuous-build:
+    name: "Continuous Build"
     runs-on: "ubuntu-latest"
 
     steps:
     - uses: actions/checkout@v1
+    - name: "Update Packages"
+      run: sudo apt update
+    - name: "Install Lua"
+      run: sudo apt install lua5.3
     - name: "Pull Submodules"
       run: git submodule update --init
     - name: "Combine"
@@ -26,3 +30,4 @@ jobs:
         title: "Development Build"
         files: |
           tfm_lua/*.tfm.lua.txt
+
