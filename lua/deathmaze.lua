@@ -3,7 +3,7 @@
 -- @author TFM:Pshy#3752 DC:Pshy#7998 (script)
 -- @author TFM:Nnaaaz#0000 (maps)
 --
--- @optional_require pshy_deathmaze_anticheat_ext.lua
+-- Ask Pshy for the anticheat variant `pshy.games.deathmaze_anticheat_ext`
 pshy.require("pshy.alternatives.chat")
 pshy.require("pshy.alternatives.timers")
 pshy.require("pshy.anticheats.antiguest")
@@ -52,8 +52,8 @@ splashscreen.y = 20					-- y location
 splashscreen.sx = 0.95					-- scale on x
 splashscreen.sy = 0.95					-- scale on y
 splashscreen.text = nil
-perms.authors[70224600] = "Nnaaaz#0000"
-perms.authors[105766424] = "Pshy#3752"
+perms.authors["Nnaaaz#0000"] = true
+perms.authors["Pshy#3752"] = true
 mapinfo.max_grounds = 30
 
 
