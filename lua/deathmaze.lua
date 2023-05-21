@@ -9,7 +9,7 @@ pshy.require("pshy.alternatives.timers")
 pshy.require("pshy.anticheats.antiguest")
 local splashscreen = pshy.require("pshy.bases.splashscreen")
 pshy.require("pshy.bases.version")
-pshy.require("pshy.bonuses")
+local bonuses = pshy.require("pshy.bonuses")
 pshy.require("pshy.bonuses.list.basic")
 pshy.require("pshy.bonuses.list.misc")
 pshy.require("pshy.bonuses.mapext")
@@ -124,9 +124,9 @@ maps["4"].bonuses = {
 	{type_name = "BonusRemoveGround", chat_message = "<n><j><b>%s</b></j> Unlocked gate <j><b>VI</b></j>", image = "17d0b994f57.png", x = 624, y = 1724, remove_ground_id = {11, 12}, dm_ordered = 6};
 	{type_name = "BonusRemoveGround", chat_message = "<n><j><b>%s</b></j> Unlocked gate <rose><b>VII</b></rose>", image = "17d0b9966ca.png", x = 278, y = 525, remove_ground_id = {13, 14}, dm_ordered = 7};
 	{type_name = "BonusRemoveGround", chat_message = "<n><j><b>%s</b></j> Unlocked final gate <vi><b>VIII</b></vi>", image = "17d0b997e3d.png", x = 254, y = 1943, remove_ground_id = {15, 16}, dm_ordered = 8, dm_last = true};
-	{type_name = "BonusShrink", image = "17db916fa38.png", x = 6700, y = 1910, scale = 0.5, behavior = PSHY_BONUS_BEHAVIOR_REMAIN};
-	{type_name = "BonusGrow", image = "17db94a54b7.png", x = 945, y = 725, scale = 1.5, behavior = PSHY_BONUS_BEHAVIOR_REMAIN};
-	{type_name = "BonusGrow", image = "17e88c84f3f.png", x = 710, y = 1378, scale = 1, behavior = PSHY_BONUS_BEHAVIOR_REMAIN};
+	{type_name = "BonusShrink", image = "17db916fa38.png", x = 6700, y = 1910, scale = 0.5, behavior = bonuses.BEHAVIOR_REMAIN};
+	{type_name = "BonusGrow", image = "17db94a54b7.png", x = 945, y = 725, scale = 1.5, behavior = bonuses.BEHAVIOR_REMAIN};
+	{type_name = "BonusGrow", image = "17e88c84f3f.png", x = 710, y = 1378, scale = 1, behavior = bonuses.BEHAVIOR_REMAIN};
 	{type_name = "Teleporter", image = "17994471411.png", x = 5605, y = 1340, dst = {x = 2136, y = 195}};
 }
 table.insert(death_maze_maps, "4")
@@ -144,9 +144,9 @@ maps["5"].bonuses = {
 	{type_name = "BonusRemoveGround", chat_message = "<n><j><b>%s</b></j> Unlocked gate <j><b>VI</b></j>", image = "17d0b994f57.png", x = 1395, y = 245, remove_ground_id = {11, 12}, dm_ordered = 6};
 	{type_name = "BonusRemoveGround", chat_message = "<n><j><b>%s</b></j> Unlocked gate <rose><b>VII</b></rose>", image = "17d0b9966ca.png", x = 612, y = 1454, remove_ground_id = {13, 14, 17, 18}, dm_ordered = 7};
 	{type_name = "BonusRemoveGround", chat_message = "<n><j><b>%s</b></j> Unlocked final gate <vi><b>VIII</b></vi>", image = "17d0b997e3d.png", x = 1036, y = 723,  remove_ground_id = {15, 16}, dm_ordered = 8, dm_last = true};
-	{type_name = "BonusShrink", image = "17db916fa38.png", x = 502, y = 239, scale = 0.5, behavior = PSHY_BONUS_BEHAVIOR_REMAIN};
-	{type_name = "BonusGrow", image = "17db94a54b7.png", x = 1905, y = 950, scale = 1.5, behavior = PSHY_BONUS_BEHAVIOR_REMAIN};
-	{type_name = "BonusGrow", image = "17e88c84f3f.png", x = 1819, y = 1300, scale = 1, behavior = PSHY_BONUS_BEHAVIOR_REMAIN};
+	{type_name = "BonusShrink", image = "17db916fa38.png", x = 502, y = 239, scale = 0.5, behavior = bonuses.BEHAVIOR_REMAIN};
+	{type_name = "BonusGrow", image = "17db94a54b7.png", x = 1905, y = 950, scale = 1.5, behavior = bonuses.BEHAVIOR_REMAIN};
+	{type_name = "BonusGrow", image = "17e88c84f3f.png", x = 1819, y = 1300, scale = 1, behavior = bonuses.BEHAVIOR_REMAIN};
 	{type_name = "Teleporter", image = "17994475f7c.png", x = 1005, y = 625, dst = {x = 1040, y = 160}};
 	{type_name = "Teleporter", image = "17994471411.png", x = 1100, y = 160, dst = {x = 1050, y = 625}};
 }
@@ -164,9 +164,9 @@ maps["6"].bonuses = {
 	{type_name = "BonusRemoveGround", chat_message = "<n><j><b>%s</b></j> Unlocked gate <j><b>VI</b></j>", image = "17d0b994f57.png", x = 887, y = 253, remove_ground_id = {11, 12}, dm_ordered = 6};
 	{type_name = "BonusRemoveGround", chat_message = "<n><j><b>%s</b></j> Unlocked gate <rose><b>VII</b></rose>", image = "17d0b9966ca.png", x = 1536, y = 676, remove_ground_id = {13, 14}, dm_ordered = 7};
 	{type_name = "BonusRemoveGround", chat_message = "<n><j><b>%s</b></j> Unlocked final gate <vi><b>VIII</b></vi>", image = "17d0b997e3d.png", x = 1777, y = 76,  remove_ground_id = {15, 16}, dm_ordered = 8, dm_last = true};
-	{type_name = "BonusShrink", image = "17db916fa38.png", x = 1941, y = 506, scale = 0.5, behavior = PSHY_BONUS_BEHAVIOR_REMAIN};
-	{type_name = "BonusGrow", image = "17db94a54b7.png", x = 2750, y = 335, scale = 1.5, behavior = PSHY_BONUS_BEHAVIOR_REMAIN};
-	{type_name = "BonusGrow", image = "17e88c84f3f.png", x = 2425, y = 155, scale = 1, behavior = PSHY_BONUS_BEHAVIOR_REMAIN};
+	{type_name = "BonusShrink", image = "17db916fa38.png", x = 1941, y = 506, scale = 0.5, behavior = bonuses.BEHAVIOR_REMAIN};
+	{type_name = "BonusGrow", image = "17db94a54b7.png", x = 2750, y = 335, scale = 1.5, behavior = bonuses.BEHAVIOR_REMAIN};
+	{type_name = "BonusGrow", image = "17e88c84f3f.png", x = 2425, y = 155, scale = 1, behavior = bonuses.BEHAVIOR_REMAIN};
 }
 table.insert(death_maze_maps, "6")
 
@@ -181,9 +181,9 @@ maps["7"].bonuses = {
 	{type_name = "BonusRemoveGround", chat_message = "<n><j><b>%s</b></j> Unlocked gate <bl><b>IV</b></bl>", image = "17d0b992075.png", x = 1474, y = 184, remove_ground_id = {7, 8}, dm_ordered = 4};
 	{type_name = "BonusRemoveGround", chat_message = "<n><j><b>%s</b></j> Unlocked gate <ch><b>V</b></ch>", image = "17d0b9937e5.png", x = 714, y = 2052, remove_ground_id = {9, 10}, dm_ordered = 5};
 	{type_name = "BonusRemoveGround", chat_message = "<n><j><b>%s</b></j> Unlocked final gate <j><b>VI</b></j>", image = "17d0b994f57.png", x = 1456, y = 119, remove_ground_id = {11, 12}, dm_ordered = 6, dm_last = true};
-	{type_name = "BonusShrink", image = "17db916fa38.png", x = 89, y = 1152, scale = 0.5, behavior = PSHY_BONUS_BEHAVIOR_REMAIN};
-	{type_name = "BonusGrow", image = "17db94a54b7.png", x = 1266, y = 947, scale = 1.5, behavior = PSHY_BONUS_BEHAVIOR_REMAIN};
-	{type_name = "BonusGrow", image = "17e88c84f3f.png", x = 1890, y = 672, scale = 1, behavior = PSHY_BONUS_BEHAVIOR_REMAIN};
+	{type_name = "BonusShrink", image = "17db916fa38.png", x = 89, y = 1152, scale = 0.5, behavior = bonuses.BEHAVIOR_REMAIN};
+	{type_name = "BonusGrow", image = "17db94a54b7.png", x = 1266, y = 947, scale = 1.5, behavior = bonuses.BEHAVIOR_REMAIN};
+	{type_name = "BonusGrow", image = "17e88c84f3f.png", x = 1890, y = 672, scale = 1, behavior = bonuses.BEHAVIOR_REMAIN};
 }
 table.insert(death_maze_maps, "7")
 
@@ -200,9 +200,9 @@ maps["8"].bonuses = {
 	{type_name = "BonusRemoveGround", chat_message = "<n><j><b>%s</b></j> Unlocked gate <j><b>VI</b></j>", image = "17d0b994f57.png", x = 1538, y = 778, remove_ground_id = {11, 12}, dm_ordered = 6};
 	{type_name = "BonusRemoveGround", chat_message = "<n><j><b>%s</b></j> Unlocked gate <rose><b>VII</b></rose>", image = "17d0b9966ca.png", x = 2114, y = 1420, remove_ground_id = {13, 14}, dm_ordered = 7};
 	{type_name = "BonusRemoveGround", chat_message = "<n><j><b>%s</b></j> Unlocked final gate <vi><b>VIII</b></vi>", image = "17d0b997e3d.png", x = 1987, y = 523,  remove_ground_id = {15, 16}, dm_ordered = 8, dm_last = true};
-	{type_name = "BonusShrink", image = "17db916fa38.png", x = 569, y = 616, scale = 0.5, behavior = PSHY_BONUS_BEHAVIOR_REMAIN};
-	{type_name = "BonusGrow", image = "17db94a54b7.png", x = 675, y = 1016, scale = 1.5, behavior = PSHY_BONUS_BEHAVIOR_REMAIN};
-	{type_name = "BonusGrow", image = "17e88c84f3f.png", x = 1085, y = 1487, scale = 1, behavior = PSHY_BONUS_BEHAVIOR_REMAIN};
+	{type_name = "BonusShrink", image = "17db916fa38.png", x = 569, y = 616, scale = 0.5, behavior = bonuses.BEHAVIOR_REMAIN};
+	{type_name = "BonusGrow", image = "17db94a54b7.png", x = 675, y = 1016, scale = 1.5, behavior = bonuses.BEHAVIOR_REMAIN};
+	{type_name = "BonusGrow", image = "17e88c84f3f.png", x = 1085, y = 1487, scale = 1, behavior = bonuses.BEHAVIOR_REMAIN};
 }
 table.insert(death_maze_maps, "8")
 
@@ -219,9 +219,9 @@ maps["9"].bonuses = {
 	{type_name = "BonusRemoveGround", chat_message = "<n><j><b>%s</b></j> Unlocked gate <j><b>VI</b></j>", image = "17d0b994f57.png", x = 561, y = 9710, remove_ground_id = {6, 66}, dm_ordered = 6};
 	{type_name = "BonusRemoveGround", chat_message = "<n><j><b>%s</b></j> Unlocked gate <rose><b>VII</b></rose>", image = "17d0b9966ca.png", x = 597, y = 18545, remove_ground_id = {7, 77}, dm_ordered = 7};
 	{type_name = "BonusRemoveGround", chat_message = "<n><j><b>%s</b></j> Unlocked final gate <vi><b>VIII</b></vi>", image = "17d0b997e3d.png", x = 692, y = 21392,  remove_ground_id = {8, 88, 888}, dm_ordered = 8, dm_last = true};
-	{type_name = "BonusShrink", image = "17db916fa38.png", x = 700, y = 15583, scale = 0.5, behavior = PSHY_BONUS_BEHAVIOR_REMAIN};
-	{type_name = "BonusGrow", image = "17db94a54b7.png", x = 184, y = 21519, scale = 1.5, behavior = PSHY_BONUS_BEHAVIOR_REMAIN};
-	{type_name = "BonusGrow", image = "17e88c84f3f.png", x = 217, y = 15573, scale = 1, behavior = PSHY_BONUS_BEHAVIOR_REMAIN};
+	{type_name = "BonusShrink", image = "17db916fa38.png", x = 700, y = 15583, scale = 0.5, behavior = bonuses.BEHAVIOR_REMAIN};
+	{type_name = "BonusGrow", image = "17db94a54b7.png", x = 184, y = 21519, scale = 1.5, behavior = bonuses.BEHAVIOR_REMAIN};
+	{type_name = "BonusGrow", image = "17e88c84f3f.png", x = 217, y = 15573, scale = 1, behavior = bonuses.BEHAVIOR_REMAIN};
 	{type_name = "Teleporter", image = "17994471411.png", x = 235, y = 748, dst = {x = 240, y = 3572}};
 	{type_name = "Teleporter", image = "17994471411.png", x = 103, y = 3506, dst = {x = 200, y = 6179}};
 	{type_name = "Teleporter", image = "17994471411.png", x = 560, y = 6178, dst = {x = 400, y = 9380}};
@@ -257,9 +257,9 @@ maps["10"].bonuses = {
 	{type_name = "BonusRemoveGround", chat_message = "<n><j><b>%s</b></j> Unlocked gate <j><b>VI</b></j>", image = "17d0b994f57.png", x = 1795, y = 2433, remove_ground_id = {6, 61, 62, 63, 64, 65}, dm_ordered = 6};
 	{type_name = "BonusRemoveGround", chat_message = "<n><j><b>%s</b></j> Unlocked gate <rose><b>VII</b></rose>", image = "17d0b9966ca.png", x = 920, y = 142, remove_ground_id = {7, 71, 72}, dm_ordered = 7};
 	{type_name = "BonusRemoveGround", chat_message = "<n><j><b>%s</b></j> Unlocked final gate <vi><b>VIII</b></vi>", image = "17d0b997e3d.png", x = 2854, y = 2580, remove_ground_id = {8, 81, 82}, dm_ordered = 8, dm_last = true};
-	{type_name = "BonusShrink", image = "17db916fa38.png", x = 1855, y = 1060, scale = 0.5, behavior = PSHY_BONUS_BEHAVIOR_REMAIN};
-	{type_name = "BonusGrow", image = "17db94a54b7.png", x = 1144, y = 2410, scale = 1.5, behavior = PSHY_BONUS_BEHAVIOR_REMAIN};
-	{type_name = "BonusGrow", image = "17e88c84f3f.png", x = 1715, y = 2710, scale = 1, behavior = PSHY_BONUS_BEHAVIOR_REMAIN};
+	{type_name = "BonusShrink", image = "17db916fa38.png", x = 1855, y = 1060, scale = 0.5, behavior = bonuses.BEHAVIOR_REMAIN};
+	{type_name = "BonusGrow", image = "17db94a54b7.png", x = 1144, y = 2410, scale = 1.5, behavior = bonuses.BEHAVIOR_REMAIN};
+	{type_name = "BonusGrow", image = "17e88c84f3f.png", x = 1715, y = 2710, scale = 1, behavior = bonuses.BEHAVIOR_REMAIN};
 	{type_name = "Teleporter", image = "17db9283b95.png", x = 220, y = 170, dst = {{x = 1847, y = 61}, {x = 1857, y = 85}, {x = 433, y = 560}, {x = 1707, y = 700}, {x = 2571, y = 850}, {x = 2705, y = 975}, {x = 2564, y = 1275}, {x = 68, y = 1348}, {x = 137, y = 1852}, {x = 2854, y = 1995}, {x = 62, y = 2856}, {x = 644, y = 2860}, {x = 1530, y = 1190}}};
 	{type_name = "Teleporter", image = "17db9283b95.png", x = 1776, y = 714, dst = {{x = 220, y = 170}, {x = 1847, y = 61}, {x = 1857, y = 85}, {x = 433, y = 560}, {x = 1707, y = 700}, {x = 2571, y = 850}, {x = 2705, y = 975}, {x = 2564, y = 1275}, {x = 68, y = 1348}, {x = 137, y = 1852}, {x = 2854, y = 1995}, {x = 62, y = 2856}, {x = 644, y = 2860}, {x = 1530, y = 1190}}};
 	{type_name = "Teleporter", image = "17db9283b95.png", x = 764, y = 844, dst = {{x = 220, y = 170}, {x = 1847, y = 61}, {x = 1857, y = 85}, {x = 433, y = 560}, {x = 1707, y = 700}, {x = 2571, y = 850}, {x = 2705, y = 975}, {x = 2564, y = 1275}, {x = 68, y = 1348}, {x = 137, y = 1852}, {x = 2854, y = 1995}, {x = 62, y = 2856}, {x = 644, y = 2860}, {x = 1530, y = 1190}}};
@@ -517,9 +517,9 @@ maps["11"].bonuses = {
 	{type_name = "BonusRemoveGround", chat_message = "<n><j><b>%s</b></j> Unlocked gate <j><b>VI</b></j>", image = "17d0b994f57.png", x = 2325, y = 2483, remove_ground_id = {6, 61, 62, 63, 64, 65}, dm_ordered = 6};
 	{type_name = "BonusRemoveGround", chat_message = "<n><j><b>%s</b></j> Unlocked gate <rose><b>VII</b></rose>", image = "17d0b9966ca.png", x = 1759, y = 3068, remove_ground_id = {7, 71, 72}, dm_ordered = 7};
 	{type_name = "BonusRemoveGround", chat_message = "<n><j><b>%s</b></j> Unlocked final gate <vi><b>VIII</b></vi>", image = "17d0b997e3d.png", x = 1700, y = 3165, remove_ground_id = {8, 81}, dm_ordered = 8, dm_last = true};
-	{type_name = "BonusShrink", image = "17db916fa38.png", x = 1959, y = 1044, scale = 0.5, behavior = PSHY_BONUS_BEHAVIOR_REMAIN};
-	{type_name = "BonusGrow", image = "17db94a54b7.png", x = 2269, y = 842, scale = 1.5, behavior = PSHY_BONUS_BEHAVIOR_REMAIN};
-	{type_name = "BonusGrow", image = "17e88c84f3f.png", x = 2152, y = 1299, scale = 1, behavior = PSHY_BONUS_BEHAVIOR_REMAIN};
+	{type_name = "BonusShrink", image = "17db916fa38.png", x = 1959, y = 1044, scale = 0.5, behavior = bonuses.BEHAVIOR_REMAIN};
+	{type_name = "BonusGrow", image = "17db94a54b7.png", x = 2269, y = 842, scale = 1.5, behavior = bonuses.BEHAVIOR_REMAIN};
+	{type_name = "BonusGrow", image = "17e88c84f3f.png", x = 2152, y = 1299, scale = 1, behavior = bonuses.BEHAVIOR_REMAIN};
 	{type_name = "Teleporter", image = "17db9283b95.png", x = 1757, y = 1447, dst = {{x = 1700, y = 86}, {x = 1752, y = 840}, {x = 1594, y = 1592}, {x = 1190, y = 1292}, {x = 594, y = 1193}}};
 	{type_name = "Teleporter", image = "17db9283b95.png", x = 2968, y = 1750, dst = {{x = 1957, y = 1860}, {x = 1905, y = 2395}, {x = 1440, y = 2870}, {x = 523, y = 1972}, {x = 1700, y = 86}, {x = 1752, y = 840}, {x = 1594, y = 1592}, {x = 1190, y = 1292}, {x = 594, y = 1193}}};
 }
