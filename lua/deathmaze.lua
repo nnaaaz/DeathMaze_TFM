@@ -573,6 +573,12 @@ end
 function eventNewGame()
 	map_completed = false
 	tfm.exec.setGameTime(60 * 60, true)
+	local music_candidates = {
+		"deadmaze/x_musique_1";
+		"deadmaze/x_musique_2";
+		"deadmaze/x_musique_3";
+	}
+	tfm.exec.playMusic(music_candidates[math.random(1, #music_candidates)], "musique", 95, true)
 end
 
 
